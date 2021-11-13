@@ -53,7 +53,7 @@ Note: Here we have selected the ap-south-1a subnet, you can select as per your c
 10: Here you shall see that our Instance is launched in our ap-south-2a subnet.
 ![image](https://user-images.githubusercontent.com/17270996/141602541-14ac519f-4397-4a79-b6a6-0d86b49994d6.png)
 
-Step 2: Create Windows EC2 Instance in Different Subnet
+## Step 2: Create Windows EC2 Instance in Different Subnet
 Repeat the steps 1 - 6 from above
 
 7: In the Configure Security Group step we have to select the existing security group to the instance and now click on Review and Launch.
@@ -72,7 +72,7 @@ Note: Here you can choose your existing key pair which we have created earlier w
 
 Thus, at this step, we have successfully created two EC2 instances in two different subnets, Now in further steps we will see how to get connected with Windows EC2 Instance.
 
-Step 3: Connect to Windows EC2 Instance
+## Step 3: Connect to Windows EC2 Instance
 In this section, we are going to connect with our Windows EC2 Instance.
 
 1: Select the instance and click on connect.
@@ -118,7 +118,7 @@ Then Click on Yes to proceed.
 
 Thus we have successfully connected with our first EC2 instance. Similarly, you can connect with another EC2 instance by following the same steps as we followed here. 
 
-Step 4: Configure IIS Server on Windows EC2 Instance
+## Step 4: Configure IIS Server on Windows EC2 Instance
 In this section, we are going to install the IIS server on our windows EC2.
 
 1: Once you connect with your Ec2 Instance, click on the Start button and then click on Server Manager.
@@ -168,7 +168,7 @@ Note: The feature installation will take some time (approx. 5 minutes) to comple
 
 Thus we have successfully installed IIS on our Windows Instance. similarly, you have to install the IIS server on our second EC2 instance.
 
-Step 5: Create a Web Page on IIS Server
+## Step 5: Create a Web Page on IIS Server
 In this section, we are going to create a webpage on the IIS server, which we are going to access in further steps.
 
 1: Navigate to the local disk of your Windows Virtual machine. You will see a folder by the name inetpub created in your local disk. Double click to open it.
@@ -214,7 +214,7 @@ For Second Instance:
 
 Thus, we have successfully created a Webpage on our first Instance. similarly, you have to create a webpage on your second Instance, only you have to change the HTML code which we have given above for Instance 2.
 
-Step 6: Create a Load Balancer & Access The Webpage
+## Step 6: Create a Load Balancer & Access The Webpage
 In this section, we are going to create a load balancer and attach both EC2 instances with our load balancer and access the webpage through load balancer DNS.
 
 1: Under the EC2 dashboard, scroll down from the left panel and click on Load balancers, Now click on Create Load Balancer.
