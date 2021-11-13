@@ -82,3 +82,48 @@ Application Auto-Scaling is a web service for developers and system administrato
 * Specifically, you’ve got to specify the minimum and maximum size of the Auto-Scaling group.
 * You also have the option to set the desired number of instances you want autoscaling to provision and maintained.
 
+# Attach an existing load balancer
+You can attach an existing load balancer to an Auto Scaling group when you create or update the group. If you want to create and attach a new Application Load Balancer or Network Load Balancer at the same time as you create the group, see Configure an Application Load Balancer or Network Load Balancer using the Amazon EC2 Auto Scaling console.
+
+To attach an existing load balancer as you are creating a new Auto Scaling group
+
+1. Open the Amazon EC2 Auto Scaling console at https://console.aws.amazon.com/ec2autoscaling/.
+
+2. Choose Create Auto Scaling group.
+
+3. In steps 1 and 2, choose the options as desired and proceed to Step 3: Configure advanced options.
+
+4. For Load balancing, choose Attach to an existing load balancer.
+
+5. Under Attach to an existing load balancer, do one of the following:
+
+   * For Application Load Balancers, Network Load Balancers, and Gateway Load Balancers:
+
+      Choose Choose from your load balancer target groups, and then choose a target group in the Existing load balancer target groups field.
+
+   * For Classic Load Balancers:
+
+      Choose Choose from Classic Load Balancers, and then choose your load balancer in the Classic Load Balancers field.
+
+6. Proceed to create the Auto Scaling group. Your instances will be automatically registered to the load balancer after the Auto Scaling group has been created.
+
+To attach an existing load balancer to an existing Auto Scaling group
+
+Use the following procedure to attach a load balancer to an existing Auto Scaling group.
+
+1. Open the Amazon EC2 Auto Scaling console at https://console.aws.amazon.com/ec2autoscaling/.
+
+2. Select the check box next to an existing group.
+
+   A split pane opens up in the bottom part of the Auto Scaling groups page, showing information about the group that's selected.
+
+3. On the Details tab, choose Load balancing, Edit.
+
+4. Under Load balancing, do one of the following:
+
+   * For Application, Network or Gateway Load Balancer target groups, select its check box and choose a target group.
+
+   * For Classic Load Balancers, select its check box and choose your load balancer.
+
+5. Choose Update.
+
