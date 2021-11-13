@@ -12,4 +12,32 @@
 
 ### How AWS CloudFormation Works?
 
+![image](https://user-images.githubusercontent.com/17270996/141611358-7a30ac07-1255-4137-9ff2-5fcb830699ec.png)
+
+## CloudFormation Template:
+
+* Example:
+
+```
+{
+    "AWSTemplateFormatVersion" : "2010-09-09",
+    "Description" : "A simple Ec2"
+    "Resources": {
+        "MyEC2Instance": {
+            "Type": "AWS::EC2::Instance",
+            "Properties" : {
+                "ImageId" : "ami-0ff8a91507f77f867",
+                "InstanceType": "t2.micro"
+            }
+        }
+    }
+}
+
+```
+
+### Refer the below templates for examples
+
+https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/sample-templates-services-us-west-2.html
+
+
 
