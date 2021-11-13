@@ -184,20 +184,25 @@ In this section, we are going to create a webpage on the IIS server, which we ar
 5: Now to make our web page look a bit attractive. We will edit this HTML code by erasing everything in it by Pressing Ctrl+A and delete, write our own HTML code and Save it.
 
 For First Instance:
-
-`<html>
+```
+<html>
 <body bgcolor=green>
 <h1>Welcome to My Demo </h1>
 </body>
-</html>`
+</html>
+
+```
 
 For Second Instance:
 
-`<html>
+```
+<html>
 <body bgcolor=yellow>
 <h1>Welcome to My Demo </h1>
 </body>
-</html>`
+</html>
+
+```
 
 ![image](https://user-images.githubusercontent.com/17270996/141603110-f1455972-8a92-4fc8-8303-a20892252cbc.png)
 
