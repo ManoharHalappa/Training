@@ -85,15 +85,18 @@ git push
 2) Launch the instance on which our code will be deployed. To know more about how to launch an EC2 instance check our Blog on EC2 Instance. Just remember to add the IAM role that we have created and In Auto-assign Public IP, choose Enable.
   
 Expand Advanced Details, and in User data, As text selected, enter the following:
+  
 ```
-#!/bin/bash
-yum -y update
-yum install -y ruby
-yum install -y aws-cli
-cd /home/ec2-user
-aws s3 cp s3://aws-codedeploy-us-east-2/latest/install . –region us-east-2
-chmod +x ./install
-./install auto
+  
+  #!/bin/bash
+  yum -y update
+  yum install -y ruby
+  yum install -y aws-cli
+  cd /home/ec2-user
+  aws s3 cp s3://aws-codedeploy-us-east-2/latest/install . –region us-east-2
+  chmod +x ./install
+  ./install auto
+  
 ```
 ![image](https://user-images.githubusercontent.com/17270996/141643673-4ec86f42-f747-4941-8704-7fe55771a872.png)
 
