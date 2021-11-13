@@ -187,7 +187,7 @@ For First Instance:
 
 <html>
 <body bgcolor=green>
-<h1>Welcome to K21 Academy </h1>
+<h1>Welcome to My Demo </h1>
 </body>
 </html>
 
@@ -195,7 +195,7 @@ For Second Instance:
 
 <html>
 <body bgcolor=yellow>
-<h1>Welcome to K21 Academy </h1>
+<h1>Welcome to My Demo </h1>
 </body>
 </html>
 
