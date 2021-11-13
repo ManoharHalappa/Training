@@ -26,5 +26,18 @@ from disasters, such as earthquakes and floods.
 If you choose One Zone, choose the Availability Zone that you want the file system created in, or
 leave the default setting.
 
-Note : One Zone storage classes are not available in all Availability Zones in AWS Regions where
-Amazon EFS is available.
+**Note** - One Zone storage classes are not available in all Availability Zones in AWS Regions where Amazon EFS is available.
+6. Choose **Create** to create a file system. The **File systems** page appears with a banner across the top showing the status of the file system
+you created.
+
+![image](https://user-images.githubusercontent.com/17270996/141606183-0d1d1f1f-dcc6-4d37-93b3-ba0c1b7a5993.png)
+
+## Steps to mount EFS to EC2 instance
+1) Ensure to add inbound rules in security group Type NFS (Port 2049) and soruce as self (SG should be same used for creating EC2 instance)
+2) sudo yum install -y amazon-efs-utils (Run this command to install efs utils into EC2)
+3) Mkdir ~/efs-mount-point (Create directory called efs-mount-point)
+4) sudo mount -t efs -o tls fs-0d97e17e8d3a1345f:/ ~/efs-mount-point (Mounts the EFS file drive to mountpoint)
+5) sudo mount -t efs -o tls,accesspoint=access-point-id file-system-id ~/efs-mount-point
+6) df -h (list the volumes. should show the newly attached EFS drive)
+
+
