@@ -1,5 +1,5 @@
 # How to Attach EBS Volume on EC2 Windows & Linux Instance in AWS
-**Windows**
+## Windows 
 Step 1: Go to Ec2 -> Volumes and Create new Volume
 
 Select the availability zone where your EC2 is created as volumes are Zone specific
@@ -35,6 +35,39 @@ Step 6: New Simple Volume
 Select the volume letter example:- D
 
 ![image](https://user-images.githubusercontent.com/17270996/141607977-79f6849c-f0fb-46ee-8aa4-efb465b2cc7d.png)
+
+## Linux
+
+Follow Step 1 and 2 above and attached the volume to Linux Machine
+
+Step3: Login in to Linux machine 
+  * Type to list the attached volumes
+
+    ```
+    df -f
+    ```
+  * List all block device
+
+    ```
+    lsblk
+    ```
+  * Check if the file system is attahced
+
+    ```
+    file -s /dev/xvdf 
+    ```
+  * Attach it to file system
+    ```
+    mkfs -t xfs /dev/xvdf 
+    ```
+  * Create new directory to mount
+    ```
+    mkdir ~/ebs-mount
+    ```
+  * Mount the new volume
+    ```
+    mount /dev/xvdf ~/ebs-mount
+    ```
 
 
 
