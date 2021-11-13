@@ -40,4 +40,5 @@ you created.
 5) sudo mount -t efs -o tls,accesspoint=access-point-id file-system-id ~/efs-mount-point
 6) df -h (list the volumes. should show the newly attached EFS drive)
 
+*Note:* We can install EFS to more than one EC2.
 
