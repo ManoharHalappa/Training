@@ -71,6 +71,74 @@ Step 7:− Fill in all the required details such as Name, Type, Alias, TTL secon
 ![image](https://user-images.githubusercontent.com/17270996/141610670-262e7971-a662-4d73-9972-46080c0b0bb7.png)
 
 
+# AWS Certificate Manager
+
+**AWS Certificate Manager (ACM)** is designed to simplify and automate many of the tasks traditionally associated with provisioning and managing SSL/TLS certificates. ACM takes care of the complexity surrounding the provisioning, deployment, and renewal of digital certificates for no extra cost!
+
+### Overview of SSL/TLS Certificates
+
+* An SSL certificate is like an ID card or a badge that proves someone is who they say they are.
+
+* **SSL (Secure Socket Layer)** is the standard security technology for establishing an encrypted link between a web server and a browser. This link ensures that all data passed between the web server and browsers remain private and integral.
+
+   ![image](https://user-images.githubusercontent.com/17270996/141610909-99703efc-7a63-40a8-81ac-f48fdddfc4a4.png)
+
+* Transport Layer Security (TLS) is the successor protocol to SSL. TLS is an improved version of SSL. It works in much the same way as the SSL, using encryption to protect the transfer of data and information. The two terms are often used interchangeably in the industry although SSL is still widely used.
+
+### How SSL/TLS works
+1. A server attempts to connect to a website (i.e. a web-server) secured with SSL. The server requests the web-server to identify itself.
+2. The web-server sends the server a copy of its SSL certificate.
+3. The server checks to see whether or not it trusts the SSL certificate. If so, it sends a message to the web-server.
+4. The web-server sends back a digitally signed acknowledgement to start an SSL encrypted session.
+5. Encrypted data is shared between the server and the web-server.
+
+![image](https://user-images.githubusercontent.com/17270996/141610979-42623ad3-6001-4f10-8ce9-dcc863697003.png)
+
+### What is AWS Certificate Manager (ACM)?
+
+AWS Certificate Manager is a service that lets you easily provision, manage, and deploy public and private Secure Sockets Layer/Transport Layer Security (SSL/TLS) certificates for use with AWS services and your internal connected resources.
+
+![image](https://user-images.githubusercontent.com/17270996/141611004-446c2727-e61f-419f-a7d4-1c40343172e2.png)
+
+With AWS Certificate Manager, you will be able to quickly request a certificate, deploy it on ACM-integrated AWS resources, like Elastic Load Balancers, Amazon CloudFront distributions, and APIs on API Gateway, and let AWS Certificate Manager handle certificate renewals.
+
+
+## Requesting an SSL/TLS Certificates Using AWS Certificate Manager
+
+Step 1: Provision Certificates
+To get started, sign in to the AWS Management Console and navigate to the ACM console. Choose to Get started to request a certificate.
+
+![image](https://user-images.githubusercontent.com/17270996/141611025-cb5a6509-849d-4256-a87e-7a36492d7ff5.png)
+
+Step 2: Request a Certificate
+Now, choose Request a certificate to request a new certificate.
+
+![image](https://user-images.githubusercontent.com/17270996/141611031-4dce627a-d225-48e4-a734-3b5eb20e6859.png)
+
+Step 3: Provide Domain Names
+Provide your domain name and don’t forget to add a wildcard before your domain name.
+
+![image](https://user-images.githubusercontent.com/17270996/141611040-69a37938-bdae-4370-8970-4151ff8556c9.png)
+
+
+Step 4: Select the Validation Method
+With DNS validation, you write a CNAME record to your DNS configuration to establish control of your domain name. Choose DNS validation, and then click on Next.
+
+![image](https://user-images.githubusercontent.com/17270996/141611051-713bb4a5-fb7e-4603-a1a1-0dc39e93fe16.png)
+
+Step 5: Create a Record in Route53
+Click on Create a record in Route53, then it automatically creates a CNAME record in Route53 hosted zone.
+
+![image](https://user-images.githubusercontent.com/17270996/141611061-2542e352-90e6-4d95-8993-be78e262d740.png)
+
+Step 6: Certificate Issued
+Refresh, and once the validation is completed the status of the certificate will become issued.
+
+![image](https://user-images.githubusercontent.com/17270996/141611071-f11fd27b-a9dc-4dab-84e6-772c368ea0c9.png)
+
+
+
+
 
 
 
