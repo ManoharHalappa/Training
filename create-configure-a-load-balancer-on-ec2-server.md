@@ -267,11 +267,11 @@ Note: Do not copy the “(A Record)” text.
 
 12: Here you shall accessible to a yellow webpage, Now continuously refresh your page.
 
-![image](https://user-images.githubusercontent.com/17270996/141603287-f42150a7-1161-4a8c-a065-430ac298be4b.png)
+![image](https://user-images.githubusercontent.com/17270996/141603604-875df200-f782-4041-b467-19429d9b3437.png)
 
 13: Here you shall see that your webpage is switching between yellow and green webpage continuously.
 
-![image](https://user-images.githubusercontent.com/17270996/141603296-91ad5dd7-e754-4642-bbcd-beb1b1e61e6a.png)
+![image](https://user-images.githubusercontent.com/17270996/141603628-ce5ae227-7d7c-4d4f-a57c-816b70cbef40.png)
 
 Thus we have successfully created a Load balancer and attached both of our EC2 Instances and accessed the Webpage through Load balancer DNS.
 
