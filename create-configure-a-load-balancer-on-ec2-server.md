@@ -1,3 +1,6 @@
+
+![image](https://user-images.githubusercontent.com/17270996/141603748-796fc616-96e3-48a1-8356-490edb955fcc.png)
+
 Steps To Create & Configure Load Balancer On Windows EC2
 Step 1: Create Amazon Windows EC2 Instance
 Step 2: Create Windows EC2 Instance in Different Subnet
