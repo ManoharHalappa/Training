@@ -210,8 +210,6 @@ For Second Instance:
 
 ```
 
-![image](https://user-images.githubusercontent.com/17270996/141603110-f1455972-8a92-4fc8-8303-a20892252cbc.png)
-
 Thus, we have successfully created a Webpage on our first Instance. similarly, you have to create a webpage on your second Instance, only you have to change the HTML code which we have given above for Instance 2.
 
 ## Step 6: Create a Load Balancer & Access The Webpage
