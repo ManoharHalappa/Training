@@ -33,52 +33,6 @@ Fargate allocates the right amount of compute, eliminating the need to choose in
 
 ![image](https://user-images.githubusercontent.com/17270996/141667670-605e05fc-268e-4271-abb2-64967c7218b1.png)
 
-AWS Fargate – How to Deploy A Containerized Application: Case Study
-
-December 6, 2020 by Rohan Mode 2 Comments
-
- 573 views
-In this post, we are going to cover the basic steps to deploy a containerized application with AWS Fargate the Serverless way.
-
-AWS Fargate is a serverless compute engine for containers that work with Amazon Elastic Container Service. Fargate makes it easy for you to focus on building your applications. Fargate removes the need to provision and manage servers, lets you specify and pay for resources per application, and improves security through application isolation by design.
-
-Topics, we’ll cover :
-
-Overview of Containers
-What is AWS Fargate?
-Demo: Fargate in Action
-Before deploying a web application we should understand the basic concept of Containers, what are they and what kind of tools are offered by AWS for Containers Orchestration.
-
-Overview of Containers
-Overview of Containers
- 
-
-Containers are an executable unit of software in which application code is packaged, along with its libraries and dependencies, in common ways so that it can be run anywhere, whether it be on the desktop, traditional IT, or the cloud.
-Containers are small, fast, and portable because unlike a virtual machine, containers do not need to include a guest OS in every instance and can, instead, simply leverage the features and resources of the host OS.
-Making software applications behave predictably on different computers is one of the biggest challenges for developers. The software may need to run in multiple environments: development, testing, staging, and production.
-To solve these challenges, more and more developers are using a technology called containers. Each container encapsulates an entire runtime environment. This includes the application itself, as well as the dependencies, libraries, frameworks, and configuration files that it needs to run.
-To understand better about Containers and Container Lifecycle read our blog on Docker Containers.
-
-What is AWS Fargate?
-AWS Fargate is a compute engine for Amazon Elastic Container Service(ECS) that allows you to run containers without having to provision, configure & scale clusters of VMs that host container applications.
-
-AWS Fargate eliminates the need for users to manage the EC2 instances on their own. In fact, users don’t need to use EC2 instances at all. Fargate itself will act as a compute engine. It lets you focus on elements like designing and constructing your application instead of managing the infrastructure that runs them. With the Fargate launch type, all you need to do is package your application in containers, specify the memory and CPU requirements, define IAM policies & launch your application.
-
-Launch types
-Also Read : About Amazon EC2 Instance.
-
-What is Amazon ECS?
-Amazon Elastic Container Service (ECS) helps schedule and orchestrate containers across a fleet of servers. It involves installing an agent on each container host that takes instructions from the ECS control plane and relays them to the local Docker image on each one.
-
-Read here: A good example of how the DevOps principles are used in practice is AWS CloudFormation.
-
-Why AWS Fargate?
-Containerization has transformed cloud architecture over the past few years, allowing businesses to build, deploy & manage applications at a faster rate. There are a plethora of container & container orchestration services that are available today. Most of them, however, still require you to configure and manage clusters of virtual machines for the containers to run. This is where AWS Fargate comes into the picture. 
-
-Fargate allocates the right amount of compute, eliminating the need to choose instances and scale cluster capacity. You only pay for the resources required to run your containers, so there is no over-provisioning and paying for additional servers. 
-
-Need for Fargate
-
 ## Working of AWS Fargate
 Before getting into the working, let’s understand some general terms that you will encounter several times when you are dealing with AWS Fargate.
 
