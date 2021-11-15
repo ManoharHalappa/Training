@@ -42,3 +42,6 @@ you created.
 
 *Note:* We can install EFS to more than one EC2.
 
+Note: 1) EFS pricing detials 
+      2) EFS attachment failing issue
+
