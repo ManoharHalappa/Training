@@ -19,3 +19,9 @@ Clone a repository into a new directory
 git clone <repository>
 
 ```
+
+## Git Reset
+Reset the staged changes
+```
+git reset
+```
