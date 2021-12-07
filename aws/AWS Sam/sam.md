@@ -19,3 +19,9 @@ https://aws.amazon.com/blogs/compute/working-with-aws-lambda-and-lambda-layers-i
         run: sam deploy --region eu-west-2 --no-fail-on-empty-changeset --stack-name <stack-name> --s3-bucket <bucket-name> --s3-prefix <folder-path> --template-file out.yaml --capabilities CAPABILITY_IAM
 
 ```
+
+# SAM Examples
+
+AWS Lambda with permissions
+
+https://aws.amazon.com/premiumsupport/knowledge-center/lambda-sam-template-permissions/
