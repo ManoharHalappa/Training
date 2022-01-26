@@ -102,3 +102,21 @@ AWS Glue is a fully managed ETL (extract, transform, and load) service that make
 
 ## Crawler
 A crawler is a job defined in Amazon Glue. It crawls databases and buckets in S3 and then creates tables in Amazon Glue together with their schema. Then, you can perform your data operations in Glue, like ETL.
+
+## Classifier
+A classifier reads the data in a data store. If it recognizes the format of the data, it generates a schema. The classifier also returns a certainty number to indicate how certain the format recognition was. AWS Glue provides a set of built-in classifiers, but you can also create custom classifiers.
+
+# AWS Shield
+AWS Shield is a managed Distributed Denial of Service (DDoS) protection service that safeguards applications running on AWS. AWS Shield provides always-on detection and automatic inline mitigations that minimize application downtime and latency, so there is no need to engage AWS Support to benefit from DDoS protection.
+
+## AWS Shield vs WAF
+
+While AWS WAF is a firewall that can protect you from multiple types of attacks and provide various options for whitelisting, AWS Shield is a single-purpose service. AWS Shield is a managed Distributed Denial of Service (DDoS) protection tool for your AWS-based applications.
+
+#  Amazon Kinesis Data Streams producer
+An Amazon Kinesis Data Streams producer is an application that puts user data records into a Kinesis data stream (also called data ingestion). The Kinesis Producer Library (KPL) simplifies producer application development, allowing developers to achieve high write throughput to a Kinesis data stream.
+
+## KPL VS KCL
+Kinesis Producer Library is installed and used within your producer applications while the Kinesis Client Library is installed and used to consume data from the stream. So, the KPL lives on wherever applications are producing data and the KCL lives wherever you need to consume or process the streaming data from Kinesis.
+
+An example would be, installing the KPL onto an EC2 instance that runs an application. This application produces many, many logs files. You use the KPL to stream these logs into the Kinesis Data Stream.
