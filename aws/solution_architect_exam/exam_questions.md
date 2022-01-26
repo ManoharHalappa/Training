@@ -51,38 +51,38 @@ Network File System (NFS) file servers
 
 # AWS Auto Scalling
 
-## **Target tracking scaling policies**
+  ## **Target tracking scaling policies**
 
-Amazon EC2 Auto Scaling creates and manages the CloudWatch alarms that trigger the scaling policy and calculates the scaling adjustment based on the metric and the target value. The scaling policy adds or removes capacity as required to keep the metric at, or close to, the specified target value. In addition to keeping the metric close to the target value, a target tracking scaling policy also adjusts to changes in the metric due to a changing load pattern.
+  Amazon EC2 Auto Scaling creates and manages the CloudWatch alarms that trigger the scaling policy and calculates the scaling adjustment based on the metric and the target  value. The scaling policy adds or removes capacity as required to keep the metric at, or close to, the specified target value. In addition to keeping the metric close to the target value, a target tracking scaling policy also adjusts to changes in the metric due to a changing load pattern.
 
-For example, you can use target tracking scaling to:
+  For example, you can use target tracking scaling to:
 
-* Configure a target tracking scaling policy to keep the average aggregate CPU utilization of your Auto Scaling group at 40 percent.
-* Configure a target tracking scaling policy to keep the request count per target of your Application Load Balancer target group at 1000 for your Auto Scaling group.
+  * Configure a target tracking scaling policy to keep the average aggregate CPU utilization of your Auto Scaling group at 40 percent.
+  * Configure a target tracking scaling policy to keep the request count per target of your Application Load Balancer target group at 1000 for your Auto Scaling group.
 
-**Step and simple scaling policies**
+  **Step and simple scaling policies**
 
-Both require you to create CloudWatch alarms for the scaling policies. Both require you to specify the high and low thresholds for the alarms. Both require you to define whether to add or remove instances, and how many, or set the group to an exact size.
+  Both require you to create CloudWatch alarms for the scaling policies. Both require you to specify the high and low thresholds for the alarms. Both require you to define whether to add or remove instances, and how many, or set the group to an exact size.
 
-The main difference between the policy types is the step adjustments that you get with step scaling policies. When step adjustments are applied, and they increase or decrease the current capacity of your Auto Scaling group, the adjustments vary based on the size of the alarm breach.
+  The main difference between the policy types is the step adjustments that you get with step scaling policies. When step adjustments are applied, and they increase or decrease the current capacity of your Auto Scaling group, the adjustments vary based on the size of the alarm breach.
 
-**In most cases, step scaling policies are a better choice than simple scaling policies, even if you have only a single scaling adjustment.**
+  **In most cases, step scaling policies are a better choice than simple scaling policies, even if you have only a single scaling adjustment.**
 
-## **Placement groups**
+  ## **Placement groups**
 
-When you launch a new EC2 instance, the EC2 service attempts to place the instance in such a way that all of your instances are spread out across underlying hardware to minimize correlated failures. You can use placement groups to influence the placement of a group of interdependent instances to meet the needs of your workload. Depending on the type of workload, you can create a placement group using one of the following placement strategies:
+  When you launch a new EC2 instance, the EC2 service attempts to place the instance in such a way that all of your instances are spread out across underlying hardware to minimize correlated failures. You can use placement groups to influence the placement of a group of interdependent instances to meet the needs of your workload. Depending on the type of workload, you can create a placement group using one of the following placement strategies:
 
-**Cluster** – packs instances close together inside an Availability Zone. This strategy enables workloads to achieve the low-latency network performance necessary for tightly-coupled node-to-node communication that is typical of HPC applications. 
+  **Cluster** – packs instances close together inside an Availability Zone. This strategy enables workloads to achieve the low-latency network performance necessary for tightly-coupled node-to-node communication that is typical of HPC applications. 
 
-**Partition** – spreads your instances across logical partitions such that groups of instances in one partition do not share the underlying hardware with groups of instances in different partitions. This strategy is typically used by large distributed and replicated workloads, such as Hadoop, Cassandra, and Kafka. 
+  **Partition** – spreads your instances across logical partitions such that groups of instances in one partition do not share the underlying hardware with groups of instances in different partitions. This strategy is typically used by large distributed and replicated workloads, such as Hadoop, Cassandra, and Kafka. 
 
-**Spread** – strictly places a small group of instances across distinct underlying hardware to reduce correlated failures. 
+  **Spread** – strictly places a small group of instances across distinct underlying hardware to reduce correlated failures. 
 
-## **Scaling cooldowns**
+  ## **Scaling cooldowns**
 
-A scaling cooldown helps you prevent your Auto Scaling group from launching or terminating additional instances before the effects of previous activities are visible.
+  A scaling cooldown helps you prevent your Auto Scaling group from launching or terminating additional instances before the effects of previous activities are visible.
 
-When you use simple scaling, after the Auto Scaling group scales using a simple scaling policy, it waits for a cooldown period to complete before any further scaling activities initiated by simple scaling policies can start. An adequate cooldown period helps to prevent the initiation of an additional scaling activity based on stale metrics. 
+  When you use simple scaling, after the Auto Scaling group scales using a simple scaling policy, it waits for a cooldown period to complete before any further scaling activities initiated by simple scaling policies can start. An adequate cooldown period helps to prevent the initiation of an additional scaling activity based on stale metrics. 
 
 # AWS ENA (Elastic Network Adapter)
 
@@ -96,27 +96,27 @@ Amazon Athena is an interactive query service that makes it easy to analyze data
 
 AWS Glue is an event-driven, serverless computing platform provided by Amazon as a part of Amazon Web Services. It is a computing service that runs code in response to events and automatically manages the computing resources required by that code. 
 
-## Use case
+  ## Use case
 
-AWS Glue is a fully managed ETL (extract, transform, and load) service that makes it simple and cost-effective to categorize your data, clean it, enrich it, and move it reliably between various data stores and data streams. ... AWS Glue is designed to work with semi-structured data. It is a serverless data integration service that makes it easy to discover, prepare, and combine data for analytics, machine learning, and application development.
+  AWS Glue is a fully managed ETL (extract, transform, and load) service that makes it simple and cost-effective to categorize your data, clean it, enrich it, and move it reliably between various data stores and data streams. ... AWS Glue is designed to work with semi-structured data. It is a serverless data integration service that makes it easy to discover, prepare, and combine data for analytics, machine learning, and application development.
 
-## Crawler
-A crawler is a job defined in Amazon Glue. It crawls databases and buckets in S3 and then creates tables in Amazon Glue together with their schema. Then, you can perform your data operations in Glue, like ETL.
+  ## Crawler
+  A crawler is a job defined in Amazon Glue. It crawls databases and buckets in S3 and then creates tables in Amazon Glue together with their schema. Then, you can perform your data operations in Glue, like ETL.
 
-## Classifier
-A classifier reads the data in a data store. If it recognizes the format of the data, it generates a schema. The classifier also returns a certainty number to indicate how certain the format recognition was. AWS Glue provides a set of built-in classifiers, but you can also create custom classifiers.
+  ## Classifier
+  A classifier reads the data in a data store. If it recognizes the format of the data, it generates a schema. The classifier also returns a certainty number to indicate how certain the format recognition was. AWS Glue provides a set of built-in classifiers, but you can also create custom classifiers.
 
 # AWS Shield
 AWS Shield is a managed Distributed Denial of Service (DDoS) protection service that safeguards applications running on AWS. AWS Shield provides always-on detection and automatic inline mitigations that minimize application downtime and latency, so there is no need to engage AWS Support to benefit from DDoS protection.
 
-## AWS Shield vs WAF
+  ## AWS Shield vs WAF
 
-While AWS WAF is a firewall that can protect you from multiple types of attacks and provide various options for whitelisting, AWS Shield is a single-purpose service. AWS Shield is a managed Distributed Denial of Service (DDoS) protection tool for your AWS-based applications.
+  While AWS WAF is a firewall that can protect you from multiple types of attacks and provide various options for whitelisting, AWS Shield is a single-purpose service. AWS Shield is a managed Distributed Denial of Service (DDoS) protection tool for your AWS-based applications.
 
 #  Amazon Kinesis Data Streams producer
 An Amazon Kinesis Data Streams producer is an application that puts user data records into a Kinesis data stream (also called data ingestion). The Kinesis Producer Library (KPL) simplifies producer application development, allowing developers to achieve high write throughput to a Kinesis data stream.
 
-## KPL VS KCL
-Kinesis Producer Library is installed and used within your producer applications while the Kinesis Client Library is installed and used to consume data from the stream. So, the KPL lives on wherever applications are producing data and the KCL lives wherever you need to consume or process the streaming data from Kinesis.
+  ## KPL VS KCL
+  Kinesis Producer Library is installed and used within your producer applications while the Kinesis Client Library is installed and used to consume data from the stream. So, the KPL lives on wherever applications are producing data and the KCL lives wherever you need to consume or process the streaming data from Kinesis.
 
-An example would be, installing the KPL onto an EC2 instance that runs an application. This application produces many, many logs files. You use the KPL to stream these logs into the Kinesis Data Stream.
+  An example would be, installing the KPL onto an EC2 instance that runs an application. This application produces many, many logs files. You use the KPL to stream these logs into the Kinesis Data Stream.
