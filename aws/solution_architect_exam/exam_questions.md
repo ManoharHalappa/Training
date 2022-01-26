@@ -84,6 +84,10 @@ A scaling cooldown helps you prevent your Auto Scaling group from launching or t
 
 When you use simple scaling, after the Auto Scaling group scales using a simple scaling policy, it waits for a cooldown period to complete before any further scaling activities initiated by simple scaling policies can start. An adequate cooldown period helps to prevent the initiation of an additional scaling activity based on stale metrics. 
 
-## AWS ENA (Elastic Network Adapter)
+# AWS ENA (Elastic Network Adapter)
 
 ENA is a custom network interface optimized to deliver high throughput and packet per second (PPS) performance, and consistently low latencies on EC2 instances. Using ENA, customers can utilize up to 20 Gbps of network bandwidth on certain EC2 instance types.
+
+# AWS Athena
+
+Amazon Athena is an interactive query service that makes it easy to analyze data in Amazon S3 using standard SQL. Athena is serverless, so there is no infrastructure to manage, and you pay only for the queries that you run. ... This makes it easy for anyone with SQL skills to quickly analyze large-scale datasets.
