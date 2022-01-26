@@ -91,3 +91,14 @@ ENA is a custom network interface optimized to deliver high throughput and packe
 # AWS Athena
 
 Amazon Athena is an interactive query service that makes it easy to analyze data in Amazon S3 using standard SQL. Athena is serverless, so there is no infrastructure to manage, and you pay only for the queries that you run. ... This makes it easy for anyone with SQL skills to quickly analyze large-scale datasets.
+
+# Amazon Glue
+
+AWS Glue is an event-driven, serverless computing platform provided by Amazon as a part of Amazon Web Services. It is a computing service that runs code in response to events and automatically manages the computing resources required by that code. 
+
+## Use case
+
+AWS Glue is a fully managed ETL (extract, transform, and load) service that makes it simple and cost-effective to categorize your data, clean it, enrich it, and move it reliably between various data stores and data streams. ... AWS Glue is designed to work with semi-structured data. It is a serverless data integration service that makes it easy to discover, prepare, and combine data for analytics, machine learning, and application development.
+
+## Crawler
+A crawler is a job defined in Amazon Glue. It crawls databases and buckets in S3 and then creates tables in Amazon Glue together with their schema. Then, you can perform your data operations in Glue, like ETL.
