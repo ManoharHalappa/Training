@@ -25,6 +25,9 @@ Use Case:
 
 Amazon FSx makes it easy and cost effective to launch, run, and scale feature-rich, high-performance file systems in the cloud. It supports a wide range of workloads with its reliability, security, scalability, and broad set of capabilities. Amazon FSx is built on the latest AWS compute, networking, and disk technologies to provide high performance and lower TCO. And as a fully managed service, it handles hardware provisioning, patching, and backups -- freeing you up to focus on your applications, your end users, and your business.
 
+![image](https://user-images.githubusercontent.com/17270996/151119537-1bc632b2-790a-4130-9011-eb715a04879c.png)
+
+
 What is difference between EFS and FSx?
 
 **Amazon EFS** is a managed NAS filer for EC2 instances based on Network File System (NFS) version 4. ... **FSx** for Windows, on the other hand, is a managed Windows Server that runs Windows Server Message Block (SMB)-based file services. It is conceptually analogous to Amazon Relational Database Service
@@ -60,6 +63,9 @@ Network File System (NFS) file servers
   * Configure a target tracking scaling policy to keep the average aggregate CPU utilization of your Auto Scaling group at 40 percent.
   * Configure a target tracking scaling policy to keep the request count per target of your Application Load Balancer target group at 1000 for your Auto Scaling group.
 
+  ![image](https://user-images.githubusercontent.com/17270996/151120564-a92410a9-0d11-4a89-a781-b467dca6d77c.png)
+
+
   **Step and simple scaling policies**
 
   Both require you to create CloudWatch alarms for the scaling policies. Both require you to specify the high and low thresholds for the alarms. Both require you to define whether to add or remove instances, and how many, or set the group to an exact size.
@@ -77,6 +83,10 @@ Network File System (NFS) file servers
   **Partition** – spreads your instances across logical partitions such that groups of instances in one partition do not share the underlying hardware with groups of instances in different partitions. This strategy is typically used by large distributed and replicated workloads, such as Hadoop, Cassandra, and Kafka. 
 
   **Spread** – strictly places a small group of instances across distinct underlying hardware to reduce correlated failures. 
+  
+  ![image](https://user-images.githubusercontent.com/17270996/151121126-4d9d3f34-e81a-45dd-8824-3e1c75bf3b74.png)
+
+  
 
   ## **Scaling cooldowns**
 
@@ -110,6 +120,12 @@ AWS Glue is an event-driven, serverless computing platform provided by Amazon as
 AWS Shield is a managed Distributed Denial of Service (DDoS) protection service that safeguards applications running on AWS. AWS Shield provides always-on detection and automatic inline mitigations that minimize application downtime and latency, so there is no need to engage AWS Support to benefit from DDoS protection.
 
   ## AWS Shield vs WAF
+  
+# S3
+
+![image](https://user-images.githubusercontent.com/17270996/151119818-8c17a9d1-e0ce-499b-81ba-0882f362437a.png)
+
+![image](https://user-images.githubusercontent.com/17270996/151119886-795d7fb5-093c-4836-809c-b5f93bb61b57.png)
 
   While AWS WAF is a firewall that can protect you from multiple types of attacks and provide various options for whitelisting, AWS Shield is a single-purpose service. AWS Shield is a managed Distributed Denial of Service (DDoS) protection tool for your AWS-based applications.
 
