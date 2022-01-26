@@ -1,10 +1,15 @@
 # Latest Topics
 
-# **Routing Policy**
+# **Route 53 - Routing Policy**
 
 ![image](https://user-images.githubusercontent.com/17270996/150969956-c51871f2-109b-40bd-b584-b0c9faa92950.png)
 
 ![image](https://user-images.githubusercontent.com/17270996/150970423-670fbe4e-526d-457c-ac8d-438b7a08492f.png)
+
+![image](https://user-images.githubusercontent.com/17270996/151122457-110be21e-7cca-4db7-8a56-7be77cac0590.png)
+
+![image](https://user-images.githubusercontent.com/17270996/151122482-9c4768dd-163b-4f65-aaf1-46a2c05d736e.png)
+
 
 # **AWS Global Accelerators**
 
@@ -102,6 +107,11 @@ ENA is a custom network interface optimized to deliver high throughput and packe
 
 Amazon Athena is an interactive query service that makes it easy to analyze data in Amazon S3 using standard SQL. Athena is serverless, so there is no infrastructure to manage, and you pay only for the queries that you run. ... This makes it easy for anyone with SQL skills to quickly analyze large-scale datasets.
 
+![image](https://user-images.githubusercontent.com/17270996/151122667-491e2ccf-ef49-473c-8632-3c42f991c1d4.png)
+
+![image](https://user-images.githubusercontent.com/17270996/151122637-ff83c5a3-d0ea-4d74-a6a5-7e991d70498c.png)
+
+
 # Amazon Glue
 
 AWS Glue is an event-driven, serverless computing platform provided by Amazon as a part of Amazon Web Services. It is a computing service that runs code in response to events and automatically manages the computing resources required by that code. 
@@ -128,6 +138,11 @@ AWS Shield is a managed Distributed Denial of Service (DDoS) protection service 
 ![image](https://user-images.githubusercontent.com/17270996/151119886-795d7fb5-093c-4836-809c-b5f93bb61b57.png)
 
   While AWS WAF is a firewall that can protect you from multiple types of attacks and provide various options for whitelisting, AWS Shield is a single-purpose service. AWS Shield is a managed Distributed Denial of Service (DDoS) protection tool for your AWS-based applications.
+  
+![image](https://user-images.githubusercontent.com/17270996/151123001-ec632305-6b3d-4388-91a4-e239d9306349.png)
+
+![image](https://user-images.githubusercontent.com/17270996/151123019-0d22414e-06cb-4f38-b0ce-b9757335a6a6.png)
+
 
 #  Amazon Kinesis Data Streams producer
 An Amazon Kinesis Data Streams producer is an application that puts user data records into a Kinesis data stream (also called data ingestion). The Kinesis Producer Library (KPL) simplifies producer application development, allowing developers to achieve high write throughput to a Kinesis data stream.
@@ -136,3 +151,16 @@ An Amazon Kinesis Data Streams producer is an application that puts user data re
   Kinesis Producer Library is installed and used within your producer applications while the Kinesis Client Library is installed and used to consume data from the stream. So, the KPL lives on wherever applications are producing data and the KCL lives wherever you need to consume or process the streaming data from Kinesis.
 
   An example would be, installing the KPL onto an EC2 instance that runs an application. This application produces many, many logs files. You use the KPL to stream these logs into the Kinesis Data Stream.
+
+# CloudFront
+
+![image](https://user-images.githubusercontent.com/17270996/151121992-3f075515-5fa0-438f-86e3-1f39002cd1aa.png)
+
+![image](https://user-images.githubusercontent.com/17270996/151121958-70c6eb21-2a38-4222-94bf-ca8cbda2b68d.png)
+
+![image](https://user-images.githubusercontent.com/17270996/151122082-7b4d51b7-37ec-4d77-b476-fabe65c861dc.png)
+
+![image](https://user-images.githubusercontent.com/17270996/151122115-34c0f078-6f81-4224-b97a-c769d6321336.png)
+
+
+
