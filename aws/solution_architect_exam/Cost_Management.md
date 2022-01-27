@@ -14,3 +14,22 @@ A Spot Instance is an instance that uses spare EC2 capacity that is available fo
 
 ## AWS On-demand
 On-Demand Instances let you pay for compute capacity by the hour or second (minimum of 60 seconds) with no long-term commitments. This frees you from the costs and complexities of planning, purchasing, and maintaining hardware and transforms what are commonly large fixed costs into much smaller variable costs.
+
+# What determinses the cost of AWS Lambdas?
+
+![image](https://user-images.githubusercontent.com/17270996/151355299-bfdbe7da-94ed-459a-bec3-33b6d6db3636.png)
+
+![image](https://user-images.githubusercontent.com/17270996/151355326-26990963-6a25-4fe7-acaf-c924419fa841.png)
+
+# CloudFront Cost
+
+![image](https://user-images.githubusercontent.com/17270996/151355533-7b526822-e87b-4afa-8046-5190c471b325.png)
+
+![image](https://user-images.githubusercontent.com/17270996/151355560-1260cafa-fbab-46ad-9ba0-117dda0143e2.png)
+
+![image](https://user-images.githubusercontent.com/17270996/151355662-2edda86d-1f05-4264-ae2d-10c1bf8b151a.png)
+
+![image](https://user-images.githubusercontent.com/17270996/151355720-452fef57-3a3b-420d-b35a-09bf391fa61c.png)
+
+
+
