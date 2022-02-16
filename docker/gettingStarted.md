@@ -17,4 +17,8 @@ Refer below link for more detials:
 
 https://docs.aws.amazon.com/lambda/latest/dg/images-create.html
 
+Visual Studio Plugin:
+
+https://code.visualstudio.com/docs/containers/overview
+
 
