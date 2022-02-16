@@ -13,4 +13,8 @@ Run
 
 ![image](https://user-images.githubusercontent.com/17270996/154272476-fc67ee40-c97c-44d7-9635-5a77dc41c6e9.png)
 
+Refer below link for more detials:
+
+https://docs.aws.amazon.com/lambda/latest/dg/images-create.html
+
 
