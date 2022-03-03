@@ -27,37 +27,54 @@ Good answer:
 
 * Explain what they do rather than just saying service names
 * Take one app such as 3 tier app with EC2, or microservices runnign on Kubernetes, or Serverless and explain in detail
+* While securing the API layer we have to thing about using IAM roles instead of static tokens
+* VPC architecture, security groups, WAF should also be considerd
 
 ![image](https://user-images.githubusercontent.com/17270996/156509318-b7886e3f-467b-4a4d-984e-a3dfc612918c.png)
 
 # Describe an acrhictecuture you designed.
 
-Average answer:
-
-Good answer:
+* Always better to explain system you designed, even if small
 
 # Biggest challenge faced during designing your application on cloud
 
-Average answer:
+Average answer: There are so many services, its hard to determine when to use for what
 
-Good answer:
+Good answer: 
+* Explain the scalling example which you have implemented or any practical solution design solution even if its small
+* Cost optimize the applications (give an example)
+  * Amazon CloudWatch Insights
+  * AWS Compute Optimizer
+  * AWS Spot instances / Cost explorer / CloudHealth
 
 # How do you pick one service vs another as a solution architect?
 
-Average answer:
-
 Good answer:
+  * Ask interviewer about system requirements
+  * You just gotta study for this one
+  * Example:
+    * Load balancer or API Gateway
+    * Serverless vs EC2
+    * SQLvs NoSQL
+    * When to user eventbridge? SQS ? SNS ?
+    * GitOps vs DevOps
+    * Kubernetes vs Lambda
+    * EKS / ECS / Fargate / Elastic Beanstalk / Lightsail
 
 # What is the difference between SQL and no SQL databases?
 
 Average answer:
 
-Good answer:
+SQL holds structured data and NoSQL holds unstructured data. You can define indexes and run queries on SQL. SQL is good for transactional system and noSQL best for logging.
+
+Good answer: Above is average answer because, it does't hightlight strengths of modern NoSQL. Modern NoSQL databases support indexes and used in transactional systems as well
 
 # What is cloud computing?
 
-Average answer:
+Average answer: Cloud computing is storing your data and servers in datacenters that you dont't own. You can run your applications on cloud. Some cloud examples are AWS, Azure, GCP
 
-Good answer:
+https://aws.amazon.com/what-is-cloud-computing/
 
 # What is AWS Service  X?
+
+Give the official defention and explain in your own words
