@@ -5,3 +5,7 @@ https://www.youtube.com/watch?v=Znqv84xi8Vs&list=PLC3y8-rFHvwgg3vaYJgHGnModB54rx
 ## Code and documentation
 
 https://github.com/facebook/react
+
+## Cheat sheet
+
+https://devhints.io/react
