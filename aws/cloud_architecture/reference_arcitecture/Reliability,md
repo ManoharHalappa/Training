@@ -1,0 +1,8 @@
+# Reliability
+
+* A reliable workload starts with upfront design decisions for both software and infrastructure with the ability of a workload to perform its intended function correctly and consistently when it's expected to.
+  * Automate healing on all layers and automatically recover from failure by monitoring all components of the workload to detect failures
+  * Test how your workload fails and validate recovery procedures
+  * Fail over to healthy resources
+  * Send notifications when events impact availability
+  * Monitor and manage service quotas and limits across accounts and regions. Ensure that a sufficient gap exists between 
