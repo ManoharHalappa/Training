@@ -6,6 +6,9 @@ https://www.youtube.com/watch?v=LU5VgGWO9zw
 # CDK for biginners
 https://bobbyhadz.com/blog/aws-cdk-tutorial-typescript
 
+# CDK workshop
+https://cdkworkshop.com/
+
 
 # Fix CDK - Argument of type Not Assignable to type Construct
 https://bobbyhadz.com/blog/aws-cdk-not-assignable-to-type-construct
