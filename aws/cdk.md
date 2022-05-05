@@ -40,7 +40,7 @@ npx cdk bootstrap
 
 # Sample Demployments
 
-* Dynamo DB
+## Dynamo DB
 
 ~~~
 import { RemovalPolicy, Stack, StackProps } from 'aws-cdk-lib';
@@ -70,3 +70,8 @@ npx aws-cdk diff
 ~~~
 
 ![image](https://user-images.githubusercontent.com/17270996/166907372-f8861aac-90dd-4adf-beb7-12dee4dc2f81.png)
+
+* cdk deploy command will deploy the solution to AWS
+~~~
+npx cdk deploy
+~~~
