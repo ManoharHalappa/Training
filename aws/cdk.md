@@ -38,3 +38,35 @@ Step 3: Bootstrap your AWS Account
 npx cdk bootstrap
 ~~~
 
+# Sample Demployments
+
+* Dynamo DB
+
+~~~
+import { RemovalPolicy, Stack, StackProps } from 'aws-cdk-lib';
+import { AttributeType, BillingMode, Table } from 'aws-cdk-lib/aws-dynamodb';
+import { Construct } from 'constructs';
+
+export class CdkThreeTierServerlessStack extends Stack {
+  constructor(scope: Construct, id: string, props?: StackProps) {
+    super(scope, id, props);
+
+    const table = new Table(this, 'NotesTable', {
+      billingMode: BillingMode.PAY_PER_REQUEST,
+      partitionKey: { name: 'pk', type: AttributeType.STRING },
+      removalPolicy: RemovalPolicy.DESTROY,
+      sortKey: { name: 'sk', type: AttributeType.STRING },
+      tableName: 'NotesTable',
+    });
+  }
+}
+
+~~~
+
+* Print Diff. cdk diff command would show what changes would occur in case we deployed our CDK code
+
+~~~
+npx aws-cdk diff
+~~~
+
+![image](https://user-images.githubusercontent.com/17270996/166907372-f8861aac-90dd-4adf-beb7-12dee4dc2f81.png)
