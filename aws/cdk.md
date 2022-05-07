@@ -17,6 +17,12 @@ https://bobbyhadz.com/blog/aws-cdk-not-assignable-to-type-construct
 
 https://ninegene.com/2021/07/29/aws-cdk-cheat-sheet/
 
+# CDK Examples
+https://github.com/kolomied/awesome-cdk
+
+# CDK Dev community
+https://cdk.dev/resources
+
 # Getting Started Steps:
 Step 1: Prerequisites
 
