@@ -44,6 +44,25 @@ Step 3: Bootstrap your AWS Account
 npx cdk bootstrap
 ~~~
 
+* Print Diff. cdk diff command would show what changes would occur in case we deployed our CDK code
+
+~~~
+npx aws-cdk diff
+~~~
+
+![image](https://user-images.githubusercontent.com/17270996/166907372-f8861aac-90dd-4adf-beb7-12dee4dc2f81.png)
+
+* cdk deploy command will deploy the solution to AWS
+~~~
+npx cdk deploy
+~~~
+
+* CDK Files
+
+package.json - manages our node packages and scripts
+jest.config.js - configuration for testing
+tsconfig.json - TypeScript configuration
+
 # Sample Demployments
 
 ## Dynamo DB
@@ -69,15 +88,3 @@ export class CdkThreeTierServerlessStack extends Stack {
 
 ~~~
 
-* Print Diff. cdk diff command would show what changes would occur in case we deployed our CDK code
-
-~~~
-npx aws-cdk diff
-~~~
-
-![image](https://user-images.githubusercontent.com/17270996/166907372-f8861aac-90dd-4adf-beb7-12dee4dc2f81.png)
-
-* cdk deploy command will deploy the solution to AWS
-~~~
-npx cdk deploy
-~~~
