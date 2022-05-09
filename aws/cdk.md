@@ -92,6 +92,7 @@ export class CdkThreeTierServerlessStack extends Stack {
 
 Inside bin folder
 
+~~~
 #!/usr/bin/env node
 import * as cdk from 'aws-cdk-lib';
 import 'source-map-support/register';
@@ -114,3 +115,4 @@ new CdkAppStack(app, 'cdk-stack-prod', {
     region: process.env.CDK_DEFAULT_REGION,
   },
 });
+~~~
