@@ -94,3 +94,9 @@ Condition expressions use a similar syntax to the previous expressions we’ve s
 ## **Update Expressions:** 
 
 Used in the UpdateItem call to describe the desired updates to an existing item
+
+In an update expression, you need to state the changes you want to make. There are four verbs for stating these changes:
+• SET: Used for adding or overwriting an attribute on an item. Can also be used to add or subtract from a number attribute
+• REMOVE: Used for deleting an attribute from an item or deleting nested properties from a list or map
+• ADD: Used for adding to a number attribute or inserting an element into a set attribute
+• DELETE: Used for removing an element from a set attribute
