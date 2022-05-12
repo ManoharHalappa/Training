@@ -50,3 +50,16 @@ Secondly, these secondary nodes can serve read requests to alleviate pressure on
 
 ![image](https://user-images.githubusercontent.com/17270996/168021892-13334781-e9dd-4bf8-babb-dc74c2894890.png)
 
+Finally, there are two times you need to think about consistency with DynamoDB.
+**First**, whenever you are reading data from your base table, you can choose your consistency level. By default, DynamoDB will make an eventually-consistent read, meaning that your read may go to a secondary node and may show slightly stale data. However, you can
+opt into a strongly-consistent read by passing ConsistentRead=True in your API call. An eventually-consistent read consumes half the write capacity of a strongly-consistent read and is a good choice for many applications.
+**Second**, you should think about consistency when choosing your secondary index type. A local secondary index will allow you to make strongly-consistent reads against it, just like the underlying table. However, a global secondary index will only allow you to make eventually-consistent reads. If you do choose a local secondary index, the mechanics are the same as with your base table—you can opt in to strongly consistent reads by setting ConsistentRead=True.
+
+## DynamoDB Limits
+1. Item size limits - 400KB of data
+2. Query and Scan Request Size Limits - Query and Scan will read a maximum of 1MB of data from your table. Further, this 1MB limit is applied before any filter expressions are considered.
+3. Partition throughput limits - A single partition can have a maximum of 3000 Read Capacity Units or 1000 Write Capacity Units.
+4. Item collection limits - If you have a local secondary index, a single item collection cannot be larger than 10GB. The partition size limit is not a problem for global secondary indexes.
+
+## Overloading keys and indexes
+This concept of using generic names for your primary keys and using different values depending on the type of item is known as overloading your keys.
