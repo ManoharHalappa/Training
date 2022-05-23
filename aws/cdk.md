@@ -5,6 +5,7 @@ https://www.youtube.com/watch?v=LU5VgGWO9zw
 
 # CDK for biginners
 https://bobbyhadz.com/blog/aws-cdk-tutorial-typescript
+https://bobbyhadz.com/blog/cdk-constructs-tutorial#cdk-constructs-library
 
 # CDK workshop
 https://cdkworkshop.com/
