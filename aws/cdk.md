@@ -26,6 +26,9 @@ https://github.com/elthrasher/cdk-three-tier-serverless
 # CDK Dev community
 https://cdk.dev/resources
 
+# CDK Book
+https://thecdkbook.com/assets/images/the_cdk_book_toc.pdf
+
 # Getting Started Steps:
 Step 1: Prerequisites
 
