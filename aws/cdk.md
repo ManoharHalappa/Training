@@ -21,6 +21,7 @@ https://ninegene.com/2021/07/29/aws-cdk-cheat-sheet/
 https://github.com/kolomied/awesome-cdk
 https://github.com/aws-samples/aws-cdk-examples/blob/master/typescript/ecs/cluster/index.ts
 https://docs.aws.amazon.com/cdk/api/v1/docs/@aws-cdk_aws-ec2.Vpc.html
+https://github.com/elthrasher/cdk-three-tier-serverless
 
 # CDK Dev community
 https://cdk.dev/resources
