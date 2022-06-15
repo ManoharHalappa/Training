@@ -26,6 +26,7 @@ https://github.com/elthrasher/cdk-three-tier-serverless
 
 # CDK Dev community
 https://cdk.dev/resources
+https://constructs.dev/search?q=&cdk=aws-cdk&cdkver=2&sort=downloadsDesc&offset=0
 
 # CDK Book
 https://thecdkbook.com/assets/images/the_cdk_book_toc.pdf
