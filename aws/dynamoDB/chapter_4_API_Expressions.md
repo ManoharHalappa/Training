@@ -1,6 +1,17 @@
 # Expressions
 
 There are five types of expressions in DynamoDB:
+
+Three types of expressions are for read-based operations: 
+* key condition expressions
+* filter expressions
+* projection expressions.
+
+The other two expression types are are used for write-based operations.
+* condition expressions 
+* update expressions
+
+
 ## **Key Condition Expressions:** 
 Used in the Query API call to describe which items you want to retrieve in your query
 
