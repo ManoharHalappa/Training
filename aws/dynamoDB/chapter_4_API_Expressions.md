@@ -13,7 +13,7 @@ The other two expression types are are used for write-based operations.
 
 
 ## **Key Condition Expressions:** 
-Used in the Query API call to describe which items you want to retrieve in your query
+Used in the Query API call to describe which items you want to retrieve in your query.A **key condition** can be used only on elements of the primary key, not on other attributes on the items.
 
 Examples:
 
@@ -111,3 +111,5 @@ In an update expression, you need to state the changes you want to make. There a
 * REMOVE: Used for deleting an attribute from an item or deleting nested properties from a list or map
 * ADD: Used for adding to a number attribute or inserting an element into a set attribute
 * DELETE: Used for removing an element from a set attribute
+
+
