@@ -23,4 +23,6 @@ https://aws.amazon.com/event-driven-architecture/
 
 https://blog.risingstack.com/10-best-practices-for-writing-node-js-rest-apis/
 
+**API Gateway best practices**
 
+https://aws.amazon.com/blogs/architecture/things-to-consider-when-you-build-rest-apis-with-amazon-api-gateway/
