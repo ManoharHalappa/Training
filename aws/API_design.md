@@ -19,4 +19,8 @@ https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-control-
 **Event Driven**
 https://aws.amazon.com/event-driven-architecture/
 
+**Node Js best practices**
+
+https://blog.risingstack.com/10-best-practices-for-writing-node-js-rest-apis/
+
 
