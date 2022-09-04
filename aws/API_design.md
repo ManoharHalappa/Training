@@ -26,3 +26,7 @@ https://blog.risingstack.com/10-best-practices-for-writing-node-js-rest-apis/
 **API Gateway best practices**
 
 https://aws.amazon.com/blogs/architecture/things-to-consider-when-you-build-rest-apis-with-amazon-api-gateway/
+
+** AWS SQS/ Lambda Trottling config**
+
+https://docs.aws.amazon.com/lambda/latest/dg/with-sqs.html#events-sqs-queueconfig
