@@ -31,3 +31,7 @@ https://aws.amazon.com/blogs/architecture/things-to-consider-when-you-build-rest
 
 https://docs.aws.amazon.com/lambda/latest/dg/with-sqs.html#events-sqs-queueconfig
 https://aws.amazon.com/blogs/compute/understanding-how-aws-lambda-scales-when-subscribed-to-amazon-sqs-queues/
+
+** SQL backend queries using API gateway / Lambda **
+
+https://dzone.com/articles/aws-lambda-with-mysql-rds-and-api-gateway
