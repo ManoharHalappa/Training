@@ -35,3 +35,7 @@ https://aws.amazon.com/blogs/compute/understanding-how-aws-lambda-scales-when-su
 ** SQL backend queries using API gateway / Lambda **
 
 https://dzone.com/articles/aws-lambda-with-mysql-rds-and-api-gateway
+
+** API Gateway with EventBridge **
+
+https://www.youtube.com/watch?v=nljmIUbF-XM
